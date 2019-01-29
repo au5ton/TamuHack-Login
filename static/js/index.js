@@ -21,7 +21,7 @@
             }).then((result) => {
                 if(result.dismiss !== 'cancel') {
                     // Retrieve the nonce
-                    fetch('/api/nonce', {
+                    fetch('/tamuhack2019/api/nonce', {
                         method: 'POST',
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify({
@@ -35,7 +35,7 @@
                             // Prompt Metamask to sign the nonce
                             web3.personal.sign(data.payload.nonce, web3.eth.coinbase,(err, signature) => {
                                 // Send the signature (+ethereum address) back for verification
-                                fetch('/api/verify', {
+                                fetch('/tamuhack2019/api/verify', {
                                     method: 'POST',
                                     headers: { "Content-Type": "application/json" },
                                     body: JSON.stringify({
@@ -48,7 +48,7 @@
                                     // If the server confirms our identity (and assigns us a session cookie)
                                     if(data.status === 'success') {
                                         // Redirect to go look at the super duper sensitive information
-                                        document.location.href = '/settings.html'
+                                        document.location.href = '/tamuhack2019/settings.html'
                                     }
                                     else {
                                         // For one reason or another, something went wrong: just display the JSON response
