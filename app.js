@@ -9,6 +9,8 @@ const port = process.env.NODE_PORT || 3000
 
 var app = express()
 
+app.use('/tamuhack2019', express.static('static'))
+
 app.use(session({
     secret: 'keyboard cat',
     resave: false,
@@ -19,7 +21,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 })); 
 
-app.use('/api', api);
-app.use('/private', private);
+app.use('/tamuhack2019/api', api);
+app.use('/tamuhack2019/private', private);
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
