@@ -14,7 +14,7 @@ var knex = require('knex')({
 
 router.get('/', (req, res, next) => {
     if(req.session.logged_in !== true) {
-        res.redirect('/')
+        res.redirect('/tamuhack2019/')
     }
     else {
         knex.select('*').from('users').then(users => {

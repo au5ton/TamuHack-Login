@@ -9,7 +9,7 @@ const port = process.env.NODE_PORT || 3000
 
 var app = express()
 
-app.use('/tamuhack2019', express.static('static'))
+app.use('/tamuhack2019', express.static(path.join(__dirname, 'static')))
 
 app.use(session({
     secret: 'keyboard cat',
