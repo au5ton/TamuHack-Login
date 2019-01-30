@@ -4,6 +4,7 @@ var session = require('express-session')
 var bodyParser = require('body-parser')
 var api = require('./routes/api');
 var private = require('./routes/private')
+const path = require('path');
 
 const port = process.env.NODE_PORT || 3000
 
