@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const eth = require('../lib/eth')
-require('dotenv').config()
+require('dotenv').config({ path: process.env.ENV_FILE })
 var knex = require('knex')({
     client: 'mysql',
     connection: {
