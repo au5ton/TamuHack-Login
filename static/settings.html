@@ -34,7 +34,7 @@
     TamuHack 2019
   </div>
 <script>
-fetch('/private').then(response => response.json()).then(data => {
+fetch('/tamuhack2019/private').then(response => response.json()).then(data => {
    document.getElementById("username").innerText = "Name: " + data.username;
    document.getElementById("p_key").innerText = "Public Key: " + data.pkey;
    document.getElementById("balance").innerText = "Balance: " + data.balance;
