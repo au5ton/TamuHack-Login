@@ -14,7 +14,8 @@ Intended to meet Charles Schwab's passwordless login challenge, *LipsumLogin* is
 <a href="https://youtu.be/FRvxORmXdi8"><img src="https://i3.ytimg.com/vi/FRvxORmXdi8/maxresdefault.jpg"></a>
 
 ## tamuhack2019
-See [Devpost submission](https://devpost.com/software/lipsumlogin).
+See [Devpost submission](https://devpost.com/software/lipsumlogin)
+and [TAMUhack website](https://tamuhack.com/).
 
 ## Running an instance
 //TODO: write documentation
